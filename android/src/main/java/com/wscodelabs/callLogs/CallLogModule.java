@@ -120,7 +120,7 @@ public class CallLogModule extends ReactContextBaseJavaModule {
                     
                     // Add the additional fields based on the CallLog.Calls constants
                     callLog.putString("assertedDisplayName", cursor.getString(cursor.getColumnIndex(CallLog.Calls.ASSERTED_DISPLAY_NAME)));
-                    callLog.putInt("autoMissedEmergencyCall", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.AUTO_MISSED_EMERGENCY_CALL)));
+                    callLog.putLong("autoMissedEmergencyCall", cursor.getLong(cursor.getColumnIndex(CallLog.Calls.AUTO_MISSED_EMERGENCY_CALL)));
                     callLog.putInt("autoMissedMaximumDialing", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.AUTO_MISSED_MAXIMUM_DIALING)));
                     callLog.putInt("autoMissedMaximumRinging", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.AUTO_MISSED_MAXIMUM_RINGING)));
                     callLog.putString("extraCallTypeFilter", cursor.getString(cursor.getColumnIndex(CallLog.Calls.EXTRA_CALL_TYPE_FILTER)));
