@@ -119,13 +119,14 @@ public class CallLogModule extends ReactContextBaseJavaModule {
                     callLog.putInt("rawType", cursor.getInt(TYPE_COLUMN_INDEX));
                     
                     // Add the additional fields based on the CallLog.Calls constants
-                    callLog.putLong("autoMissedEmergencyCall", cursor.getLong(cursor.getColumnIndex(CallLog.Calls.AUTO_MISSED_EMERGENCY_CALL)));
+                    callLog.putInt("blockedType", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.BLOCKED_TYPE)));
 
+                    // callLog.putLong("autoMissedEmergencyCall", cursor.getLong(cursor.getColumnIndex(CallLog.Calls.AUTO_MISSED_EMERGENCY_CALL)));
                 //     callLog.putString("assertedDisplayName", cursor.getString(cursor.getColumnIndex(CallLog.Calls.ASSERTED_DISPLAY_NAME)));
                 //     callLog.putInt("autoMissedMaximumDialing", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.AUTO_MISSED_MAXIMUM_DIALING)));
                 //     callLog.putInt("autoMissedMaximumRinging", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.AUTO_MISSED_MAXIMUM_RINGING)));
                 //     callLog.putString("extraCallTypeFilter", cursor.getString(cursor.getColumnIndex(CallLog.Calls.EXTRA_CALL_TYPE_FILTER)));
-                //     callLog.putInt("blockedType", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.BLOCKED_TYPE)));
+                //     
                 //     callLog.putString("blockReason", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON)));
                 //         callLog.putString("blockReasonBlockedNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON_BLOCKED_NUMBER)));
                 //         callLog.putString("blockReasonCallScreeningService", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON_CALL_SCREENING_SERVICE)));
