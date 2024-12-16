@@ -120,6 +120,7 @@ public class CallLogModule extends ReactContextBaseJavaModule {
                     
                     // Add the additional fields based on the CallLog.Calls constants
                     callLog.putInt("blockedType", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.BLOCKED_TYPE)));
+                    callLog.putString("cachedFormattedNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.CACHED_FORMATTED_NUMBER)));
 
                     // callLog.putLong("autoMissedEmergencyCall", cursor.getLong(cursor.getColumnIndex(CallLog.Calls.AUTO_MISSED_EMERGENCY_CALL)));
                 //     callLog.putString("assertedDisplayName", cursor.getString(cursor.getColumnIndex(CallLog.Calls.ASSERTED_DISPLAY_NAME)));
@@ -136,7 +137,7 @@ public class CallLogModule extends ReactContextBaseJavaModule {
                 //         callLog.putString("blockReasonPayPhone", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON_PAY_PHONE)));
                 //         callLog.putString("blockReasonRestrictedNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON_RESTRICTED_NUMBER)));
                 //         callLog.putString("blockReasonUnknownNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON_UNKNOWN_NUMBER)));
-                //     callLog.putString("cachedFormattedNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.CACHED_FORMATTED_NUMBER)));
+                //     
                 //     callLog.putString("cachedLookupUri", cursor.getString(cursor.getColumnIndex(CallLog.Calls.CACHED_LOOKUP_URI)));
                 //     callLog.putString("cachedMatchedNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.CACHED_MATCHED_NUMBER)));
                 //     callLog.putString("cachedNormalizedNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.CACHED_NORMALIZED_NUMBER)));
