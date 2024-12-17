@@ -141,33 +141,38 @@ public class CallLogModule extends ReactContextBaseJavaModule {
                     callLog.putString("location", cursor.getString(cursor.getColumnIndex(CallLog.Calls.LOCATION)));
                     callLog.putString("numberPresentation", cursor.getString(cursor.getColumnIndex(CallLog.Calls.NUMBER_PRESENTATION)));
                     callLog.putString("offsetParamKey", cursor.getString(cursor.getColumnIndex(CallLog.Calls.OFFSET_PARAM_KEY)));
-                    callLog.putString("outgoingType", cursor.getString(cursor.getColumnIndex(CallLog.Calls.OUTGOING_TYPE)));
                     callLog.putString("phoneAccountComponentName", cursor.getString(cursor.getColumnIndex(CallLog.Calls.PHONE_ACCOUNT_COMPONENT_NAME)));
                     callLog.putString("phoneAccountId", cursor.getString(cursor.getColumnIndex(CallLog.Calls.PHONE_ACCOUNT_ID)));
                     callLog.putString("postDialDigits", cursor.getString(cursor.getColumnIndex(CallLog.Calls.POST_DIAL_DIGITS)));
-                    callLog.putString("presentationAllowed", cursor.getString(cursor.getColumnIndex(CallLog.Calls.PRESENTATION_ALLOWED)));
-                    callLog.putString("presentationPayphone", cursor.getString(cursor.getColumnIndex(CallLog.Calls.PRESENTATION_PAYPHONE)));
-                    callLog.putString("presentationRestricted", cursor.getString(cursor.getColumnIndex(CallLog.Calls.PRESENTATION_RESTRICTED)));
-                    callLog.putString("presentationUnavailable", cursor.getString(cursor.getColumnIndex(CallLog.Calls.PRESENTATION_UNAVAILABLE)));
-                    callLog.putString("presentationUnknown", cursor.getString(cursor.getColumnIndex(CallLog.Calls.PRESENTATION_UNKNOWN)));
                     callLog.putString("subject", cursor.getString(cursor.getColumnIndex(CallLog.Calls.SUBJECT)));
                     callLog.putString("transcription", cursor.getString(cursor.getColumnIndex(CallLog.Calls.TRANSCRIPTION)));
                     callLog.putString("viaNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.VIA_NUMBER)));
-                    callLog.putString("voicemailType", cursor.getString(cursor.getColumnIndex(CallLog.Calls.VOICEMAIL_TYPE)));
                     callLog.putString("voicemailUri", cursor.getString(cursor.getColumnIndex(CallLog.Calls.VOICEMAIL_URI)));
                     callLog.putString("geocodedLocation", cursor.getString(cursor.getColumnIndex(CallLog.Calls.GEOCODED_LOCATION)));
-                    callLog.putString("blockReasonBlockedNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON_BLOCKED_NUMBER)));
-                        callLog.putString("blockReasonCallScreeningService", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON_CALL_SCREENING_SERVICE)));
-                        callLog.putString("blockReasonDirectToVoicemail", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON_DIRECT_TO_VOICEMAIL)));
-                        callLog.putString("blockReasonNotBlocked", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON_NOT_BLOCKED)));
-                        callLog.putString("blockReasonNotInContacts", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON_NOT_IN_CONTACTS)));
-                        callLog.putString("blockReasonPayPhone", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON_PAY_PHONE)));
-                        callLog.putString("blockReasonRestrictedNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON_RESTRICTED_NUMBER)));
-                        callLog.putString("blockReasonUnknownNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON_UNKNOWN_NUMBER)));
+                    
+                    
+                    
 
 
                     // try first all strings, then all int and long
                 //     callLog.putInt("blockedType", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.BLOCKED_TYPE))); // throws error
+
+                // int cannot be converted to String
+                // callLog.putString("outgoingType", cursor.getString(cursor.getColumnIndex(CallLog.Calls.OUTGOING_TYPE)));
+                // callLog.putString("presentationAllowed", cursor.getString(cursor.getColumnIndex(CallLog.Calls.PRESENTATION_ALLOWED)));
+                // callLog.putString("presentationPayphone", cursor.getString(cursor.getColumnIndex(CallLog.Calls.PRESENTATION_PAYPHONE)));
+                // callLog.putString("presentationRestricted", cursor.getString(cursor.getColumnIndex(CallLog.Calls.PRESENTATION_RESTRICTED)));
+                // callLog.putString("presentationUnavailable", cursor.getString(cursor.getColumnIndex(CallLog.Calls.PRESENTATION_UNAVAILABLE)));
+                // callLog.putString("presentationUnknown", cursor.getString(cursor.getColumnIndex(CallLog.Calls.PRESENTATION_UNKNOWN)));
+                // callLog.putString("voicemailType", cursor.getString(cursor.getColumnIndex(CallLog.Calls.VOICEMAIL_TYPE)));
+                // callLog.putString("blockReasonBlockedNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON_BLOCKED_NUMBER)));
+                // callLog.putString("blockReasonCallScreeningService", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON_CALL_SCREENING_SERVICE)));
+                // callLog.putString("blockReasonDirectToVoicemail", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON_DIRECT_TO_VOICEMAIL)));
+                // callLog.putString("blockReasonNotBlocked", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON_NOT_BLOCKED)));
+                // callLog.putString("blockReasonNotInContacts", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON_NOT_IN_CONTACTS)));
+                // callLog.putString("blockReasonPayPhone", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON_PAY_PHONE)));
+                // callLog.putString("blockReasonRestrictedNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON_RESTRICTED_NUMBER)));
+                // callLog.putString("blockReasonUnknownNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON_UNKNOWN_NUMBER)));
 
                 //     callLog.putLong("autoMissedEmergencyCall", cursor.getLong(cursor.getColumnIndex(CallLog.Calls.AUTO_MISSED_EMERGENCY_CALL)));
                 //     callLog.putInt("autoMissedMaximumDialing", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.AUTO_MISSED_MAXIMUM_DIALING)));
