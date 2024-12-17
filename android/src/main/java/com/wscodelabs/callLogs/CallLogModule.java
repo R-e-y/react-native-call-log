@@ -59,9 +59,13 @@ public class CallLogModule extends ReactContextBaseJavaModule {
             WritableArray result = Arguments.createArray();
 
             if (cursor == null) {
+                String[] columnNames = cursor.getColumnNames();
+                Log.d("CallLogModule", "Available columns: " + Arrays.toString(columnNames));
+
                 promise.resolve(result);
                 return;
             }
+
 
             boolean nullFilter = filter == null;
             String minTimestamp = !nullFilter && filter.hasKey("minTimestamp") ? filter.getString("minTimestamp") : "0";
@@ -143,9 +147,9 @@ public class CallLogModule extends ReactContextBaseJavaModule {
 
                     
                     // Add the additional fields based on the CallLog.Calls constants
+                    callLog.putString("blockReason", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON)));
                     callLog.putString("cachedFormattedNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.CACHED_FORMATTED_NUMBER)));
                     callLog.putString("extraCallTypeFilter", cursor.getString(cursor.getColumnIndex(CallLog.Calls.EXTRA_CALL_TYPE_FILTER)));
-                    callLog.putString("blockReason", cursor.getString(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON)));
                     callLog.putString("cachedLookupUri", cursor.getString(cursor.getColumnIndex(CallLog.Calls.CACHED_LOOKUP_URI)));
                     callLog.putString("cachedMatchedNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.CACHED_MATCHED_NUMBER)));
                     callLog.putString("cachedNormalizedNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.CACHED_NORMALIZED_NUMBER)));
