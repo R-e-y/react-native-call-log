@@ -134,44 +134,44 @@ public class CallLogModule extends ReactContextBaseJavaModule {
 
                     //Available columns
                     callLog.putLong("callId", cursor.getLong(cursor.getColumnIndex(CallLog.Calls._ID)));
-                    callLog.putInt("isAddedForAllUsers", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.ADD_FOR_ALL_USERS))); 7
+                    callLog.putInt("isAddedForAllUsers", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.ADD_FOR_ALL_USERS))); //7
                     callLog.putInt("blockReason", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.BLOCK_REASON)));
                     callLog.putString("callScreeningAppName", cursor.getString(cursor.getColumnIndex(CallLog.Calls.CALL_SCREENING_APP_NAME)));
                     callLog.putString("callScreeningComponentName", cursor.getString(cursor.getColumnIndex(CallLog.Calls.CALL_SCREENING_COMPONENT_NAME)));
                     callLog.putString("composerPhotoUri", cursor.getString(cursor.getColumnIndex(CallLog.Calls.COMPOSER_PHOTO_URI)));
                     callLog.putString("countryIso", cursor.getString(cursor.getColumnIndex(CallLog.Calls.COUNTRY_ISO)));
-                    callLog.putString("data1", cursor.getString(cursor.getColumnIndex(CallLog.Calls.DATA1))); 7
-                    callLog.putString("data2", cursor.getString(cursor.getColumnIndex(CallLog.Calls.DATA2)));7
-                    callLog.putString("data3", cursor.getString(cursor.getColumnIndex(CallLog.Calls.DATA3)));7
-                    callLog.putString("data4", cursor.getString(cursor.getColumnIndex(CallLog.Calls.DATA4)));7
+                    callLog.putString("data1", cursor.getString(cursor.getColumnIndex(CallLog.Calls.DATA1))); //7
+                    callLog.putString("data2", cursor.getString(cursor.getColumnIndex(CallLog.Calls.DATA2)));//7
+                    callLog.putString("data3", cursor.getString(cursor.getColumnIndex(CallLog.Calls.DATA3)));//7
+                    callLog.putString("data4", cursor.getString(cursor.getColumnIndex(CallLog.Calls.DATA4)));//7
                     callLog.putString("dataUsage", cursor.getString(cursor.getColumnIndex(CallLog.Calls.DATA_USAGE)));
                     callLog.putInt("callFeatures", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.FEATURES)));
                     callLog.putString("formattedNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.FORMATTED_NUMBER)));
                     callLog.putString("geocodedLocation", cursor.getString(cursor.getColumnIndex(CallLog.Calls.GEOCODED_LOCATION)));
-                    callLog.putInt("isMigrationPending", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.IS_CALL_LOG_PHONE_ACCOUNT_MIGRATION_PENDING)));7
+                    callLog.putInt("isMigrationPending", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.IS_CALL_LOG_PHONE_ACCOUNT_MIGRATION_PENDING)));//7
                     callLog.putInt("isRead", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.IS_READ)));
                     callLog.putLong("lastModified", cursor.getLong(cursor.getColumnIndex(CallLog.Calls.LAST_MODIFIED)));
                     callLog.putString("location", cursor.getString(cursor.getColumnIndex(CallLog.Calls.LOCATION)));
-                    callLog.putString("lookupUri", cursor.getString(cursor.getColumnIndex(CallLog.Calls.LOOKUP_URI)));7
-                    callLog.putString("matchedNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.MATCHED_NUMBER)));7
+                    callLog.putString("lookupUri", cursor.getString(cursor.getColumnIndex(CallLog.Calls.LOOKUP_URI)));//7
+                    callLog.putString("matchedNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.MATCHED_NUMBER)));//7
                     callLog.putInt("missedReason", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.MISSED_REASON)));
-                    callLog.putString("contactName", cursor.getString(cursor.getColumnIndex(CallLog.Calls.NAME)));7
+                    callLog.putString("contactName", cursor.getString(cursor.getColumnIndex(CallLog.Calls.NAME)));//7
                     callLog.putInt("isNew", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.NEW)));
-                    callLog.putString("normalizedNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.NORMALIZED_NUMBER)));7
-                    callLog.putString("phoneNumberLabel", cursor.getString(cursor.getColumnIndex(CallLog.Calls.NUMBER_LABEL)));7
-                    callLog.putInt("phoneNumberType", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.NUMBER_TYPE)));7
-                    callLog.putString("phoneAccountAddress", cursor.getString(cursor.getColumnIndex(CallLog.Calls.PHONE_ACCOUNT_ADDRESS)));7
-                    callLog.putInt("isPhoneAccountHidden", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.PHONE_ACCOUNT_HIDDEN)));7
-                    callLog.putLong("photoId", cursor.getLong(cursor.getColumnIndex(CallLog.Calls.PHOTO_ID)));7
-                    callLog.putString("photoUri", cursor.getString(cursor.getColumnIndex(CallLog.Calls.PHOTO_URI)));7
+                    callLog.putString("normalizedNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.NORMALIZED_NUMBER)));//7
+                    callLog.putString("phoneNumberLabel", cursor.getString(cursor.getColumnIndex(CallLog.Calls.NUMBER_LABEL)));//7
+                    callLog.putInt("phoneNumberType", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.NUMBER_TYPE)));//7
+                    callLog.putString("phoneAccountAddress", cursor.getString(cursor.getColumnIndex(CallLog.Calls.PHONE_ACCOUNT_ADDRESS)));//7
+                    callLog.putInt("isPhoneAccountHidden", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.PHONE_ACCOUNT_HIDDEN)));//7
+                    callLog.putLong("photoId", cursor.getLong(cursor.getColumnIndex(CallLog.Calls.PHOTO_ID)));//7
+                    callLog.putString("photoUri", cursor.getString(cursor.getColumnIndex(CallLog.Calls.PHOTO_URI)));//7
                     callLog.putString("postDialDigits", cursor.getString(cursor.getColumnIndex(CallLog.Calls.POST_DIAL_DIGITS)));
-                    callLog.putInt("presentation", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.PRESENTATION)));7
+                    callLog.putInt("presentation", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.PRESENTATION)));//7
                     callLog.putInt("priority", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.PRIORITY)));
                     callLog.putString("callSubject", cursor.getString(cursor.getColumnIndex(CallLog.Calls.SUBJECT)));
-                    callLog.putString("subscriptionComponentName", cursor.getString(cursor.getColumnIndex(CallLog.Calls.SUBSCRIPTION_COMPONENT_NAME)));7
-                    callLog.putString("subscriptionId", cursor.getString(cursor.getColumnIndex(CallLog.Calls.SUBSCRIPTION_ID)));7
+                    callLog.putString("subscriptionComponentName", cursor.getString(cursor.getColumnIndex(CallLog.Calls.SUBSCRIPTION_COMPONENT_NAME)));//7
+                    callLog.putString("subscriptionId", cursor.getString(cursor.getColumnIndex(CallLog.Calls.SUBSCRIPTION_ID)));//7
                     callLog.putString("transcription", cursor.getString(cursor.getColumnIndex(CallLog.Calls.TRANSCRIPTION)));
-                    callLog.putInt("transcriptionState", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.TRANSCRIPTION_STATE)));7
+                    callLog.putInt("transcriptionState", cursor.getInt(cursor.getColumnIndex(CallLog.Calls.TRANSCRIPTION_STATE)));//7
                     callLog.putString("viaNumber", cursor.getString(cursor.getColumnIndex(CallLog.Calls.VIA_NUMBER)));
                     callLog.putString("voicemailUri", cursor.getString(cursor.getColumnIndex(CallLog.Calls.VOICEMAIL_URI)));
 
